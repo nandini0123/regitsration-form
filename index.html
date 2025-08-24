@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Registration Form</title>
+    <style>
+        body
+        {
+            font-family: Arial, sans-serif;
+            background:#f0f4ff ;
+            margin: 0;
+            padding: 0;
+        }
+        .container
+        {
+            width: 36%;
+           max-width: 500px;
+            margin: 50px auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        h1
+        {
+            text-align: center;
+            color: #4a2cf4;
+            margin-bottom: 20px;
+        }
+        label
+        {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #333;
+        }
+        input,select,textarea
+        {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 18px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 14px;
+
+        }
+        input[ type="submit"]
+        {
+             background: #4a2cf5;
+             color: white;
+             font-size: 16px;
+             font-weight: bold;
+             cursor: pointer;
+             border: none;
+             transition: 0.3s;
+
+        }
+        input[type="submit"]:hover {
+      background: #3720b8;
+    }
+     /* Responsive Design */
+    @media (max-width: 600px) {
+      .container {
+        padding: 20px;
+        margin: 20px auto;
+      }
+      h1 {
+        font-size: 20px;
+      }
+      input, select, textarea {
+        font-size: 13px;
+        padding: 10px;
+      }
+      input[type="submit"] {
+        font-size: 14px;
+        padding: 10px;
+      }
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>College Registration Form</h1>
+        <form>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter you full name" required>
+
+            <label for="name">Emali ID</label>
+            <input type="text" id="Emali id" name="Emali id" placeholder="Enter you Emali" required>
+
+            <label for="name">PIN</label>
+           <input type="text" id="pin" name="pin" placeholder="pin" required>
+
+            
+            <label for="name">Branch</label>
+            <select id="branch" name="branch" required>
+                <option value="">--Select Branch--</option>
+                <option value="CSE">Computer Science </option>
+                <option value="EEE">Electrical & Communication</option>
+                <option value="EEE">Electrical & Electronics</option>
+                <option value="MECH">Mechanical</option>
+                <option value="CIVIL">Civil</option>
+            </select>
+           <label for="address">Address</label>
+           <textarea id="address" name="address" rows="4" placeholder="Enter you Address" required></textarea>
+           <input type="submit" value="Register">
+        </form>
+    </div>
+</body>
+</html>
